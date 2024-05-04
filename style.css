@@ -1,0 +1,135 @@
+/* Fonts */
+@font-face {
+    font-family: 'LondonBetween';
+    src: url('fonts/LondonBetween.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('fonts/CaviarDreams.ttf') format('truetype');
+    font-style: normal, italic;
+    font-weight: normal, bold;
+}
+
+/*General*/
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    max-height: 100vh;
+    min-height: 95vh;
+    width: 100%;
+    background-image: url("Images/quimico.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100% 100%;
+}
+
+/*Header*/
+header {
+    padding: 1%;
+    max-height: 40vh;
+    min-height: 20vh;
+    text-align: center;
+    background-image: url("Images/hexagonos.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100% 100%;
+}
+
+/* Este es mi hola mundo*/
+#hi1 {
+
+    font-size: 50px;
+    font-family: "LondonBetween";
+    color: aliceblue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #282828;
+}
+
+#hi2 {
+    font-family: 'CaviarDreams';
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+/*Imagenes del header*/
+#maths {
+    height: 30px;
+    width: 30px;
+    transform-origin: 0 0;
+    transform: translateY(8px);
+    position: relative;
+}
+
+/* Main*/
+main {
+    background-color: #282828;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+/*Section*/
+section {
+    background-color: transparent;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Articulo dentro de Section*/
+article {
+    margin: 0% 3%;
+    background-color: rgb(203, 203, 203);
+    height: 40vh;
+    width: 30%;
+}
+
+.artP {
+    background-color: black;
+    font-family: "CaviarDreams";
+    color: aliceblue;
+    font-size: small;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/*Aside*/
+aside {
+    margin: 0% 0% 0% 1%;
+    padding: 2%;
+    width: 70%;
+    background-color: transparent;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+/*Footer
+a {
+    margin: 0% 2%;
+}
+
+.imgfooter {
+    height: 3vh;
+    width: 3vw;
+}
+*/
+footer {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5vh;
+    width: 50%;
+
+}
+
