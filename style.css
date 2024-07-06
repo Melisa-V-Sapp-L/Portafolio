@@ -16,42 +16,48 @@
 /*General*/
 html,
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     max-height: 100vh;
-    min-height: 95vh;
+    min-height: 90vh;
     width: 100%;
     background-image: url("Images/quimico.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: cover;
     background-position: top center;
     background-size: 100% 100%;
 }
 
 /*Header*/
 header {
-    padding: 1%;
+    display: block;
+    margin-top: 0;
+    padding: 0;
     max-height: 40vh;
-    min-height: 20vh;
+    min-height: 30vh;
+    width: 100%;
     text-align: center;
     background-image: url("Images/hexagonos.png");
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: bottom center;
     background-size: 100% 100%;
+
 }
 
 /* Este es mi hola mundo*/
 #hi1 {
-
-    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 3.125rem;
     font-family: "LondonBetween";
     color: aliceblue;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #282828;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
 }
 
 #hi2 {
+    margin: 0;
+    padding: 0;
     font-family: 'CaviarDreams';
     font-weight: bold;
     font-size: large;
@@ -69,17 +75,17 @@ header {
 
 /* Main*/
 main {
-    background-color: #282828;
+    background-color: transparent;
     height: 100%;
     width: 100%;
-    position: fixed;
     display: flex;
     justify-content: center;
+     
 }
 
 /*Section*/
 section {
-    background-color: transparent;
+    background-color: #282828;
     width: 30%;
     display: flex;
     justify-content: center;
@@ -88,18 +94,40 @@ section {
 /*Articulo dentro de Section*/
 article {
     margin: 0% 3%;
-    background-color: rgb(203, 203, 203);
-    height: 40vh;
-    width: 30%;
-}
-
-.artP {
-    background-color: black;
     font-family: "CaviarDreams";
-    color: aliceblue;
-    font-size: small;
     writing-mode: vertical-rl;
     text-orientation: upright;
+}
+
+.artBox {
+    padding: 1% 0%;
+    background-color: #716e6e;
+    height: 4vh;
+    width: 30%;
+    font-size: 0.1rem;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.artBox:hover {
+    padding: 1% 0%;
+    height: 30vh;
+    width: 30%;
+    font-size: 0.875rem;
+    color: aliceblue;
+}
+
+#mi:hover {
+    background-color: #f6ac8b;
+}
+
+#proj:hover {
+    background-color: #99d9bb;
+}
+
+#ui:hover {
+    background-color: #ffcd5e;
 }
 
 /*Aside*/
@@ -107,29 +135,25 @@ aside {
     margin: 0% 0% 0% 1%;
     padding: 2%;
     width: 70%;
-    background-color: transparent;
+    background-color: #282828;
     color: aliceblue;
     text-align: center;
-
 }
 
-/*Footer
-a {
-    margin: 0% 2%;
-}
-
-.imgfooter {
-    height: 3vh;
-    width: 3vw;
-}
-*/
+/*Footer*/
 footer {
-    background-color: black;
+    background-color: #c7c5c5;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 5vh;
-    width: 50%;
-
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.imgfooter {
+    height: 4vh;
+    width: 3vw;
+}
